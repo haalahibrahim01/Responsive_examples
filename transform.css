@@ -1,0 +1,68 @@
+html {
+	background-color: #FFF;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	padding: 5px 17%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.example {
+	width: 240px;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.example h3 {
+	margin: 0 0 8px 0;
+	font-weight: normal;
+	font-size: 100%;
+}
+
+.example-a {
+	color: black;
+	background-color: #DDD;
+	transform: rotate(20deg) scale(1.2) skewX(3deg) translate(50px, -25px);
+	/* rotates in clockwise fashion. negative values- anticlockwise
+	each of these func can be written individually with transform or as 
+	one line.
+	scale can use pixel or multiplier
+	only the concerned element irrespective of the page moves with the 
+	transform. if scale is set high, it could overlap the example b below.
+	skew tilts i.e; rect to parallelogram. 
+	*/
+	transform-origin: 0 0;
+	/* Transform alone uses images/elements center as frame of reference while expanding etc.
+	0 0 implies that the top left corner is the pivot point and not center.
+	100% 0 means transform towards left staying constant at the top and expanding horizontally 
+	to the left
+	  transform:translate(100px, 50px); -- move 100px right and 50px to the bottom. 
+	  This can overlap other content too. 
+	  Why not position:relative instead of transform: translate? */
+
+}
+
+.example-b {
+	color: white;
+	background-color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
